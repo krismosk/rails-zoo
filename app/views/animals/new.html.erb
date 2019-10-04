@@ -1,0 +1,13 @@
+<h1>New Animal</h1>
+
+<%= form_with model: @animal do |f| %>
+  <%= "Animal name:" %>
+  <%= f.text_field :name %><br/>
+  <%= "Animal species:" %>
+  <%= f.text_field :species %><br>
+  <%= "Animal age:" %>
+  <%= f.text_field :age %><br>
+  <%= f.submit "Add Animal to Zoo" %>
+<% end %>
+
+<p><%= link_to 'Return to Animal List', animals_path %></p>

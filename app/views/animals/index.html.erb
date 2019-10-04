@@ -1,0 +1,7 @@
+<h1>Welcome to Rails Zoo</h1>
+<%= link_to 'Add a new animal to the zoo', new_animal_path %>
+<ol>
+<% @animals.each do |animal| %>
+  <li>Meet <%= link_to animal.name, animal %>!</li>
+<% end %>
+</ol>
